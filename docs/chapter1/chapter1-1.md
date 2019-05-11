@@ -1,7 +1,7 @@
 # 课程简介
 > 本节课主要是使用【Pokemon精灵攻击力预测】的例子来讲述回归算法的应用
 
-<div  align="center"><img src="http://ppryt2uuf.bkt.clouddn.com/chapter1-0.png" width = "700" height = "360" align=center /></div>
+<div  align="center"><img src="https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/chanpter1/res/chapter1-1-0.png" width = "700" height = "360" align=center /></div>
 
 
 # 回归定义和应用例子
