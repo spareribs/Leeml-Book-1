@@ -206,9 +206,12 @@ $$L(\theta^0) >L(\theta^1)>L(\theta^2)>···\tag{13}$$
 
 $$
 \begin{aligned}
-h(x)  &= \sum_{k=0}^{\infty }\frac{h^k(x_0)}{k!}(x-x_0)^k  \tag{14}
+h(x)  &= \sum_{k=0}^{\infty }\frac{h^k(x_0)}{k!}(x-x_0)^k  \\
+& =h(x_0)+{h}'(x_0)(x−x_0)+\frac{h''(x_0)}{2!}(x−x_0)^2+⋯
+\tag{14}
 \end{aligned} 
 $$
+
 
 当 $x$ 很接近 $x_0$ 时，有 $h(x)≈h(x_0)+{h}'(x_0)(x−x_0)$
 式14 就是函数 $h(x)$ 在 $x=x_0$ 点附近关于 $x$ 的幂函数展开式，也叫泰勒展开式。
