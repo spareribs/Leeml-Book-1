@@ -206,9 +206,7 @@ $$L(\theta^0) >L(\theta^1)>L(\theta^2)>···\tag{13}$$
 
 $$
 \begin{aligned}
-h(x)  &= \sum_{k=0}^{\infty }\frac{h^k(x_0)}{k!}(x-x_0)^k  \\
-& =h(x_0)+{h}'(x_0)(x−x_0)+\frac{{h}''(x_0)}{2!}(x−x_0)^2+⋯
-\tag{14}
+h(x)  &= \sum_{k=0}^{\infty }\frac{h^k(x_0)}{k!}(x-x_0)^k  \tag{14}
 \end{aligned} 
 $$
 
