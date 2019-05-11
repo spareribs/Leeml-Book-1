@@ -11,11 +11,11 @@
 # 目录
 - [学习大纲](index.md)
 - [第0课 简介](chapter0/chapter0.md)
-- [第1课 回归:案例研究](chapter1/chapter1.md)
-- [第2课 误差分析](chapter2/chapter2.md)
-- [第3课 梯度下降](chapter3/chapter3.md)
-- [第4课 概率生成模型](chapter4/chapter4.md)
-- [第5课 逻辑回归](chapter5/chapter5.md)
+- [第1课 回归:案例研究](https://github.com/datawhalechina/Leeml-Book/blob/master/docs/chapter2)
+- [第2课 误差分析](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter4)
+- [第3课 梯度下降](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter5)
+- [第4课 概率生成模型](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter8)
+- [第5课 逻辑回归](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter9)
 
 ## 视频观看地址
 bilibili地址：[李宏毅机器学习(2017)](https://www.bilibili.com/video/av10590361/)
