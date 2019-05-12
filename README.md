@@ -16,6 +16,7 @@
 - [第3课 梯度下降](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter5)
 - [第4课 概率生成模型](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter8)
 - [第5课 逻辑回归](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter9)
+- [第22课 集成学习](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter22)
 
 ## 视频观看地址
 bilibili地址：[李宏毅机器学习(2017)](https://www.bilibili.com/video/av10590361/)
