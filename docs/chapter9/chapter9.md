@@ -101,7 +101,7 @@ w∗,b∗=arg⁡maxw,bL(w,b)(1−2)
 
 朴素贝叶斯分类器如图中公式：xx属于CiCi 的概率等于每个特征属于CiCi 概率的乘积。
 
-![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter9/res/chapter9-2.jpg)
+![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter9/res/chapter9-17.jpg)
 
 计算出P(C1|x)P(C1|x)的结果是小于0.5的，即对于朴素贝叶斯分类器来说，测试数据 (1, 1)是属于类别2的，这和直观上的判断是相反的。其实这是合理，实际上训练集的数据量太小，但是对于 (1, 1)可能属于类别2这件事情，朴素贝叶斯分类器是有假设这种情况存在的（机器脑补这种可能性==）。所以结果和人类直观判断的结果不太一样。
 
@@ -118,7 +118,7 @@ w∗,b∗=arg⁡maxw,bL(w,b)(1−2)
 
 假设有3个类别，每个都有自己的weight和bias
 
-![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter9/res/chapter9-17.jpg)
+![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter9/res/chapter9-18.jpg)
 
 把z1,z2,z3z1,z2,z3放到一个叫做Softmax的方程中，Softmax做的事情就是它们进行exponential（指数化），将exponential 的结果相加，再分别用 exponential 的结果除以相加的结果。原本z1,z2,z3z1,z2,z3可以是任何值，但做完Softmax之后输出会被限制住，都介于0到1之间，并且和是1。Softmax做事情就是对最大值进行强化。
 
@@ -139,13 +139,13 @@ Softmax的输出就是用来估计后验概率（Posterior Probability）。为�
 
 ## 定义target
 
-![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter9/res/chapter9-18.jpg)
+![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter9/res/chapter9-19.jpg)
 
 上一篇讲到如果定义类别1 y^=1y^=1，类别2 y^=2y^=2，类别3 y^=3y^=3，这样会人为造成类别1 和类型2有一定的关系这种问题。但可以将 y^y^定义为矩阵，这样就避免了。而且为了计算交叉熵，y^y^也需要是个概率分布才可以。
 
 # 逻辑回归的限制
 
-![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter9/res/chapter9-19.jpg)
+![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter9/res/chapter9-20.jpg)
 
 考虑上图的例子，两个类别分布在两个对角线两端，用逻辑回归可以处理吗？
 
