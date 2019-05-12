@@ -13,10 +13,13 @@
 
 # 估测
 假设真实的模型为 $\hat f$ ， 如果我们知道 $\hat f$ 模型，那是最好不过了，但是 $\hat f$ 只有 Niamtic 公司才知道。
+
 ![](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-2.png)
+
 所以我们只能通过收集 Pokemon精灵 的数据，然后通过 step1~step3 训练得到我们的理想模型 $f^*$，$f^*$ 其实是  $\hat f$ 的一个预估。
 
 ![](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-3.png)
+
 这个过程就像打靶，$\hat f$ 就是我们的靶心，$f^*$ 就是我们投掷的结果。如上图所示，$\hat f$ 与  $f^*$ 之间蓝色部分的差距就是 $bias$ 和 $variance$ 导致的。
 
 ## 估测变量x的偏差（bias）和方差（variance）
@@ -29,6 +32,7 @@
 
 - 首先拿到 $N$ 个样本点：$\{x^1,x^2,···,x^N\}$
 - 计算平均值 $m$, 得到 $m=\frac{1}{N}\sum_n x^n \neq \mu$
+
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-4.png)
 
 但是如果计算很多组的 $m$ ，然后求 $m$ 的期望：
@@ -41,6 +45,7 @@ $$E[m]=E[\frac{1}{N}\sum x^n]=\frac{1}{N}\sum_nE[x^n]=\mu$$
 $$Var[m]=\frac{\sigma^2}{N}$$
 
 这个取决于 $N$，下图看出 $N$ 越小越离散：
+
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-5.png)
 
 ### 估测变量 x 的方差（variance）
@@ -52,10 +57,12 @@ $$Var[m]=\frac{\sigma^2}{N}$$
 
 ## 为什么会有很多的 $f^*$ ?
 讨论系列02中的案例：这里假设是在平行宇宙中，抓了不同的神奇宝贝
+
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-8.png)
 
 
 用同一个model，在不同的训练集中找到的 $f^∗$ 就是不一样的
+
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-9.png)
 
 
@@ -75,6 +82,7 @@ $$Var[m]=\frac{\sigma^2}{N}$$
 这也是因为简单的model受到不同训练集的影响是比较小的。
 
 ### 考虑不同 model的 bias
+
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-11.png)
 
 这里没办法知道真正的 $\hat{f}$，所以假设图中的那条黑色曲线为真正的 $\hat{f}$
@@ -89,12 +97,14 @@ $$Var[m]=\frac{\sigma^2}{N}$$
 直观的解释：简单的model函数集的space比较小，所以可能space里面就没有包含靶心，肯定射不中。而复杂的model函数集的space比较大，可能就包含的靶心，只是没有办法找到确切的靶心在哪，但足够多的，就可能得到真正的 f¯f¯。
 
 ### bias v.s. variance
+
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-12.png)
 
 将系列02中的误差拆分为bias何variance。简单model（左边）是bias比较大造成的error，这种情况叫做 Underfitting（欠拟合），而复杂model（右边）是variance过大造成的error，这种情况叫做Overfitting（过拟合）。
 
 # 怎么判断？
 ## 分析
+
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-13.png)
 
 如果model没有很好的fit训练集，就是bias过大，也就是Underfitting
@@ -119,11 +129,13 @@ $$Var[m]=\frac{\sigma^2}{N}$$
 现在在bias和variance之间就需要一个权衡
 想选择的model，可以平衡bias和variance产生的error，使得总error最小
 但是下面这件事最好不要做：
+
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-15.png)
 
 用训练集训练不同的model，然后在测试集上比较error，model3的error比较小，就认为model3好。但实际上这只是你手上的测试集，真正完整的测试集并没有。比如在已有的测试集上error是0.5，但有条件收集到更多的测试集后通常得到的error都是大于0.5的。
 
 ## Cross Validation（交叉验证）
+
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-16.png)
 
 图中public的测试集是已有的，private是没有的，不知道的。Cross Validation 就是将训练集再分为两部分，一部分作为训练集，一部分作为验证集。用训练集训练model，然后再验证集上比较，确实出最好的model之后（比如model3），再用全部的训练集训练model3，然后再用public的测试集进行测试，此时一般得到的error都是大一些的。不过此时会比较想再回去调一下参数，调整model，让在public的测试集上更好，但不太推荐这样。（心里难受啊，大学数模的时候就回去调，来回痛苦折腾）
