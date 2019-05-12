@@ -163,14 +163,14 @@ $$
 
 这里详细的理论支持可以查看《Pattern Recognition and Machine Learning》Christopher M. Bishop 著，chapter4.2.2
 
-![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-2.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3EzNzA4MzUwNjI=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-23.png)
 
 右图新的结果，分类的boundary是线性的，所以也将这种分类叫做 linear model。如果考虑所有的属性，发现正确率提高到了73%。
 
 # 概率模型-建模三部曲
 将上述问题简化为前几个系列说过的三大步：
 
-![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-23.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-24.png)
 
 实际做的就是要找一个概率分布模型，可以最大化产生data的likelihood。
 
@@ -179,7 +179,7 @@ $$
 
 有一种常见的假设
 
-![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-24.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-25.png)
 
 假设每一个维度用概率分布模型产生出来的几率是相互独立的，所以可以将 P(x|C1)P(x|C1) 拆解。
 
@@ -190,7 +190,7 @@ $$
 假设所有的feature都是相互独立产生的，这种分类叫做 Naive Bayes Classifier（朴素贝叶斯分类器）
 
 # 后验概率（Posterior Probability）
-![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-25.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-26.png)
 
 将 P(C1|x)P(C1|x)整理，得到一个 σ(z)σ(z)，这叫做Sigmoid function。
 
@@ -198,15 +198,15 @@ $$
 
 数学推导：
 
-![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-26.png)
-
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-27.png)
+
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-28.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-29.png)
 
 
 求得z，然后：
 
-![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-29.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-30.png)
 
 > 这里用到简单的矩阵知识，比如转置，矩阵的逆，矩阵乘法。详情可参考《高等代数》or《线性代数》；喜欢代数的，推荐丘维声著的《高等代数》，分上下册，这本书是国内代数方面的翘楚，数学系的鄙人强烈推荐。别被抄来抄去的书害了—||
 
