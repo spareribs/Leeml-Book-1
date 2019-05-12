@@ -3,8 +3,6 @@
 本节课主要介绍其他改善模型的方法，并介绍交叉验证这种模型选择的方案。
 
 
-[TOC]
-
 # Error的来源
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter4/res/chapter4-1.png)
 从上节课测试集数据来看，$Average\ Error$ 随着模型复杂增加呈指数上升趋势。更复杂的模型并不能给测试集带来更好的效果，而这些 $Error$ 的主要有两个来源，分别是 $bias$ 和 $variance$ 。

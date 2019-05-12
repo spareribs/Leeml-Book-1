@@ -1,8 +1,8 @@
 ![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-0.jpg)
-[TOC]
+
 # 背景
 ## 分类概念
-![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-1.jpg)
+![在这里插入图片描述](https://raw.githubusercontent.com/datawhalechina/Leeml-Book/master/docs/chapter8/res/chapter8-1.png)
 分类要找一个 $function$ 函数，输入对象 $x$ 特征， 输出是该对象属于 $n$ 个类别中是属于哪一个。
 
 - 例子1：比如信用评分【二分类问题】
@@ -216,4 +216,5 @@ $$
 
 > 参考：《Pattern Recognition and Machine Learning》Christopher M. Bishop 著 Chapter4.1 -4.2 
 Data: https://www.kaggle.com/abcsds/pokemon
+
 
