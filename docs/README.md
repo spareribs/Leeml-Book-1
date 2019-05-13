@@ -1,35 +1,67 @@
-
-# 李宏毅《机器学习》大纲
-
-> 主要是学习台湾大学李宏毅2017版《机器学习》课程的学习笔记
-
-| 课程 | 文档&视频 | 文档视频更新时间 | 博客 |
-| :--- | :---: | :---: | :---: |
-| Introduction of this course | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/introduction.pdf),[pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/introduction.pptx) | (2017/02/23) | |
-| Regression |[pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Regression.pdf),[pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Regression.pptx),[video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Linear%20Regression.mp4)  | (2017/03/02) | |
-| Where does the error come from? |  [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Bias%20and%20Variance.pdf),[pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Bias%20and%20Variance.pptx),[video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Error.mp4)  |  (2017/03/02, recorded at 2016/10/07) |  
-| Gradient Descent  | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Gradient%20Descent.pdf),[pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Gradient%20Descent.pptx),[video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Gradient%20Descent.mp4) | (2017/03/09, recorded at 2016/10/07)
-| Classification: Probabilistic Generative Model | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Classification%20(v2).pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Classification%20(v2).pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Classification.mp4) |  (2017/03/16, recorded at 2016/10/07) | |
-| Classification: Logistic Regression | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Logistic%20Regression%20(v4).pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Logistic%20Regression%20(v4).pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/LR.mp4) |  (2017/03/23, part of the video recorded at 2016/10/14) | |
-| Introduction of Deep Learning |  [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/DL.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/DL.pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/DL.mp4) |  (2017/03/23, recorded at 2016/10/14) | |
-| Backpropagation  | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/BP%20(v2).pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/BP%20(v2).pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/BP.mp4) |  (2017/03/23) | |
-| “Hello world” of Deep Learning |  [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Keras.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Keras.pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Keras.mp4)  | (2017/03/23) | |
-| Tips for Deep Learning  | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/DNN%20tip.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/DNN%20tip.pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/DNN_tip.mp4)  | (2017/03/30) | |
-| Convolutional Neural Network  | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/CNN.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/CNN.pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/CNN.mp4) |  (2017/04/06) | |
-| Why Deep?  | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Why.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Why.pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Why.mp4)  | (2017/04/06, recorded at 2016/11/04) | |
-| Semi-supervised Learning  | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/semi.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/semi.pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/semi.mp4) |  (2017/04/13, recorded at 2016/11/11) | |
-| Unsupervised Learning: Principle Component Analysis |  [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/PCA%20(v3).pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/PCA%20(v3).pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/PCA.mp4)  | (2017/04/13, recorded at 2016/11/11) | |
-| Unsupervised Learning: Neighbor Embedding  | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/TSNE.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/TSNE.pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/graph.mp4)  | (2017/04/20) | |
-| Unsupervised Learning: Deep Auto-encoder |  [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/auto.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/auto.pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/auto.mp4) |  (2017/04/20) | |
-| Unsupervised Learning: Word Embedding  | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/word2vec%20(v2).pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/word2vec%20(v2).pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/word2vec.mp4)  | (2017/04/27) | |
-| Unsupervised Learning: Deep Generative Model | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/GAN%20(v3).pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/GAN%20(v3).pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/GAN.mp4)  | (2017/04/27) | |
-| Transfer Learning  | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/transfer.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/transfer.pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/TF.mp4)  | (2017/05/03) | |
-| Recurrent Neural Network |  [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/RNN.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/RNN.pptx), [video (part 1)](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/RNN1.mp4), [video (part 2)](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/RNN2.mp4)  | (recorded at 2016/12/30) | |
-| Matrix Factorization |  [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/MF.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/MF.pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/MF.mp4)  | (2017/05/25) | |
-| Ensemble | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Ensemble.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Ensemble.pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Ensemble.mp4) |  (2017/05/25) | |
-| Introduction of Structured Learning  | [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Structured%20Introduction.pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Structured%20Introduction.pptx), [video (part 1)](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Structured.mp4), [video (part 1)](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/Gibbs.mp4)  | (2017/06/01) | |
-| Introduction of Reinforcement Learning |  [pdf](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/RL%20(v4).pdf), [pptx](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/RL%20(v4).pptx), [video](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/RL.mp4)  | (2017/06/15) ||
+# 李宏毅《机器学习》笔记(leeml-book)
+李宏毅老师的机器学习视频是机器学习领域经典的中文视频之一，也被称为中文世界中最好的机器学习视频。李老师以幽默风趣的上课风格让很多晦涩难懂的机器学习理论变得轻松易懂，并且老师会通过很多有趣的例子结合机器学习理论在课堂上展现出来，并且逐步推导深奥的理论知识。比如老师会经常用宝可梦来结合很多机器学习算法。对于想入门机器学习又想看中文讲解的人来说绝对是非常推荐的。
 
 
-> 以上链接都是转至 [台湾大学的官网](http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML17.html)
-<br>视频内容也可以去bilibili上面看 [李宏毅机器学习(2017)](https://www.bilibili.com/video/av10590361/)
+## 使用说明
+这个笔记是根据李宏毅老师机器学习视频的一个辅助资料，本笔记基本上完全复刻李老师课堂上讲的所有内容，并加入了一些和相关的学习资料，如果觉得看视频比较慢可以直接看笔记的内容。
+
+### 在线阅读地址
+在线阅读地址：https://datawhalechina.github.io/Leeml-Book/
+
+# 目录
+- [学习大纲](index.md)
+- [第0课 简介](chapter0/chapter0.md)
+- [第1课 回归:案例研究](https://github.com/datawhalechina/Leeml-Book/blob/master/docs/chapter2)
+- [第2课 误差分析](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter4)
+- [第3课 梯度下降](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter5)
+- [第4课 概率生成模型](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter8)
+- [第5课 逻辑回归](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter9)
+- [第22课 集成学习](https://github.com/datawhalechina/Leeml-Book/tree/master/docs/chapter22)
+
+## 视频观看地址
+bilibili地址：[李宏毅机器学习(2017)](https://www.bilibili.com/video/av10590361/)
+网易云课堂地址：[台大李宏毅机器学习中文课程](https://study.163.com/course/introduction/1208946807.htm)
+
+#  协作规范
+
+### 文档书写规范：
+文档采用Markdown语法编写，数学公式采用LaTeX语法编写，数学符号和视频里完全一致
+
+|          | 格式     | 参考资料                                                     |
+| :------: | :------- | :----------------------------------------------------------- |
+| 文档 | Markdown | 1. CSDN Markdown 使用教程 http://t.cn/E4699cO<br>2. 简书 Markdown 使用教程 https://www.jianshu.com/p/q81RER<br>3. 编辑软件推荐 Typora https://typora.io/ |
+| 数学公式 | LaTeX    | 1. CSDN Latex语法编写数学公式 http://t.cn/E469pdI<br>2.Latex 在线编辑工具 http://latex.codecogs.com/eqneditor/editor.php |
+
+
+### 目录结构规范：
+
+```
+leeML-book
+├─docs
+|  ├─chapter1  # 第1章
+|  |  ├─res  # 资源文件夹（图片、资料）
+|  |  |  └─chapter1-1.png
+|  ├─chapter2
+...
+```
+### 公式全解文档规范：
+```
+## 公式编号
+$（公式的LaTeX表达式）$
+[推导]：（公式推导步骤） or [解析]：（公式解析说明）
+## 附录
+（附录内容）
+```
+样例参见`docs/chapter2/chapter2.md`和`docs/chapter3/chapter3.md`
+
+# 主要贡献者（按首字母排名）
+
+[@ImayKing](https://github.com/Imay-King)
+[@jinjidehechengshi](https://github.com/jinjidehechengshi)
+[@spareribs](https://github.com/spareribs)
+
+# 关注我们
+
+<div align=center><img src="https://raw.githubusercontent.com/datawhalechina/pumpkin-book/master/res/qrcode.jpeg" width = "250" height = "270" alt="Datawhale，一个专注于AI领域的学习圈子。初衷是for the learner，和学习者一起成长。目前加入学习社群的人数已经数千人，组织了机器学习，深度学习，数据分析，数据挖掘，爬虫，编程，统计学，Mysql，数据竞赛等多个领域的内容学习，微信搜索公众号Datawhale可以加入我们。"></div>
+
+
